@@ -22,7 +22,7 @@
 </p>
 
 # Filament Exception Viewer
-THIS IS FORK FROM bezhansalleh/filament-exceptions
+THIS IS FORK FROM <a href="https://github.com/bezhanSalleh/filament-exceptions">bezhansalleh/filament-exceptions</a>
 
 I only update access filter to protect navigation register on not super-admin access
 
