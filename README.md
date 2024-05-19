@@ -23,8 +23,10 @@
 
 # Filament Exception Viewer
 THIS IS FORK FROM bezhansalleh/filament-exceptions
-A Simple & Beautiful Exception Viewer for FilamentPHP's Admin Panel
+
 I only update access filter to protect navigation register on not super-admin access
+
+A Simple & Beautiful Exception Viewer for FilamentPHP's Admin Panel
 * For FilamentPHP 2.x use version 1.x
 
 ## Installation
@@ -81,6 +83,12 @@ The configuration file filament-exceptions.php is automatically published into y
 
 The config file provides you with multiple options to customize the plugin.
 
+By default the plugin make navigation register on without check any permission, to enable changes this config:
+```
+    'can_access' => [
+        'role' => [],
+    ],
+```
 ### Mass Pruning
 By default Filament Exceptions is configured to prune exceptions older than 1 week.
 
@@ -113,13 +121,6 @@ class Exception extends BaseException
 {
 
 }
-```
-## Configuration
-By default the plugin make navigation register on without check any permission, to enable changes this config:
-```
-    'can_access' => [
-        'role' => [],
-    ],
 ```
 
 ## Theme
