@@ -14,6 +14,10 @@ return [
     /** Sort order, if shown. No effect, if navigation_enabled it set to false. */
     'navigation_sort' => -1,
 
+    'can_access' => [
+        'role' => [],
+    ],
+
     /** Whether to show a navigation badge. No effect, if navigation_enabled it set to false. */
     'navigation_badge' => true,
 
