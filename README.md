@@ -32,7 +32,7 @@ A Simple & Beautiful Exception Viewer for FilamentPHP's Admin Panel
 1. You can install the package via composer:
 
 ```bash
-composer require bezhansalleh/filament-exceptions
+composer require sirajunnasihin/filament-exceptions
 ```
 
 2. Publish and run the migration via:
@@ -113,6 +113,13 @@ class Exception extends BaseException
 {
 
 }
+```
+## Configuration
+By default the plugin make navigation register on without check any permission, to enable changes this config:
+```
+    'can_access' => [
+        'role' => [],
+    ],
 ```
 
 ## Theme
